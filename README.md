@@ -9,6 +9,7 @@ Bao gồm:
 - Operation
 - Model
 - View
+- Decorator
 - ApplicationHelper
 
 ## Thành phần
@@ -37,6 +38,9 @@ Bao gồm:
 
 Ngoài ra cần chú ý đến
 
+### 8. Decorator
+-  Dùng để xử lý logic của view, không được sử dụng bất cứ ở đâu ngoài trừ view
+
 ### CSS
 - Viết dạng Sass
 - Các Class, Component thì sẽ viết common. Còn màn hình nào riêng biệt thì viết trong folder pages.
@@ -46,5 +50,4 @@ Ngoài ra cần chú ý đến
 - Trang client: Viết dạng AngularJS
 - Trang admin: Viết dạng JS thuần
 - Chia các component nếu như cần thiết.
-
 

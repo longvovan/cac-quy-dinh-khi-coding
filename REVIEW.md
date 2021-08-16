@@ -15,7 +15,8 @@ Ngoài ra khi coding phải làm theo quy chuẩn sau:
 
 - Lề (indent) là 2 khoảng trắng (white space)
 - Không dùng tab
-- Không để khoảng trắng ở cuối dòng
+- Không để khoảng trắng ở cuối dòng trong một method
+- Ở cuối dòng của file, phải để khoảng trắng.
 - Trước và sau các toán tử, dấu hai chấm, sau dấu phẩy và dấu chấm phẩy, để 1 khoảng trắng.
 - Trước dấu phẩy và dấu chấm phẩy không để khoảng trắng.
 
@@ -54,7 +55,7 @@ end
 
 ```
 # Cách viết đúng
-arr.each{|elem| puts elem}
+arr.each{ |elem| puts elem }
 
 # Cách viết không đúng
 arr.each{|elem|puts elem}
@@ -420,8 +421,8 @@ products.each {|prod| prod.maintain!}
 - Tên class hoặc module thì dùng CamelCase
 - Hằng số tổng quát dùng SCREAMING_SNAKE_CASE
 - Các method trả về giá trị boolean thì thêm dấu ? ở cuối như Array#empty?
-- Các method hủy hoặc method nguy hiểm thì đặt ! ở cuối như Array#flatten! Khi định nghĩa method hủy, method không hủy như Array#flatten cũng được định nghĩa.
-
+- Các method hủy hoặc method nguy hiểm thì đặt `!` ở cuối như Array#flatten! Khi định nghĩa method hủy, method không hủy như Array#flatten cũng được định nghĩa.
+- Ngoài ra cách method nào làm thay đổi giá trị gốc của đối tượng hoặc raise ra Exception thì phải đặt `!`
 ## Cách quy định trong Class
 - Trách sử dụng biến class @@ trừ khi thực sự cần thiết
 ```
