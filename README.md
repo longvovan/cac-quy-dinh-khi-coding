@@ -38,7 +38,7 @@ Bao gồm:
 
 Ngoài ra cần chú ý đến
 
-### 8. Decorator
+### 7. Decorator
 -  Dùng để xử lý logic của view, không được sử dụng bất cứ ở đâu ngoài trừ view
 
 ### CSS
